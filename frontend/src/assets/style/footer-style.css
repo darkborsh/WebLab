@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    flex: 0 0 auto;
+    background: #11161d;
+    color: #a0b1c5;
+    width: 100%;
+    min-height: 100px;
+    padding: 50px 30px;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+footer .links div {
+    margin-left: 90px;
+}
+
+footer .links a {
+    align-content: space-between;
+    display: block;
+    padding: 10px;
+    letter-spacing: .01em;
+    transition-duration: .5s;
+}
+
+footer .links a:hover {
+    color: white;
+}
