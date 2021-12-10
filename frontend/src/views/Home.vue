@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <div class="wrapper">
     <Header></Header>
     <Footer></Footer>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -19,3 +19,6 @@ export default {
   }
 }
 </script>
+
+<style src="../assets/style/home-style.css">
+</style>
