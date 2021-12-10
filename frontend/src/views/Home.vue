@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <Header></Header>
+    <PageContent></PageContent>
     <Footer></Footer>
   </div>
 </template>
@@ -10,12 +11,14 @@
 
 import Header from "./Header"
 import Footer from "./Footer";
+import PageContent from "./PageContent";
 
 export default {
   name: 'Home',
   components: {
     Header,
-    Footer
+    Footer,
+    PageContent
   }
 }
 </script>
