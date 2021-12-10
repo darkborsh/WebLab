@@ -63,43 +63,6 @@
           <div class="label">Join Now</div>
         </a>
       </div>
-
-      <div class="search">
-        <div class="trends">
-          <section class="prev-title landing">
-            <h3 class="left-text">TRENDING NOW</h3>
-            <a href="index.html"><h5 class="right-text">View all</h5></a>
-          </section>
-          <div style="clear: left"></div>
-          <div style="clear: right"></div>
-          <section class="search-trending landing">
-            <div class="media-card">
-              <a href="index.html"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127720-ADJgIrUVMdU9.jpg"></a>
-              <h4 class="titleName">
-                <a href="index.html">Mushoku Tensei: Isekai Ittara Honki Dasu Part 2</a>
-              </h4>
-            </div>
-            <div class="media-card">
-              <a href="title.html"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21-tXMN3Y20PIL9.jpg"></a>
-              <h4>
-                <a href="title.html">ONE PIECE</a>
-              </h4>
-            </div>
-            <div class="media-card">
-              <a href="index.html"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-R5sdioCVMKwe.png"></a>
-              <h4>
-                <a href="index.html">Kimetsu no Yaiba 2</a>
-              </h4>
-            </div>
-            <div class="media-card">
-              <a href="index.html"><img src="	https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx133965-9TZBS4m4yvED.png"></a>
-              <h4>
-                <a href="index.html">Komi-san wa, Komyushou desu.</a>
-              </h4>
-            </div>
-          </section>
-        </div>
-      </div>
     </div>
   </div>
 </template>
