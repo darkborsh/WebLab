@@ -4,7 +4,7 @@
         <img :src = titles.img alt="img">
       </a>
       <h4 class="titleName">
-        <a href="">{{titles.title}}</a>
+        <router-link to="/title">{{titles.title}}</router-link>
       </h4>
     </div>
 </template>

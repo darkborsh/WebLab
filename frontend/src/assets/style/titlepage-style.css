@@ -1,0 +1,94 @@
+.page_content {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.page_content .title-info {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.title-info .banner {
+    background-image: url("https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.info {
+    background: white;
+    position: relative;
+}
+
+.cover {
+    background-color: rgba(212,230,245,.5);
+    border-radius: 2px;
+    box-shadow: 0 0 29px rgb(49 54 68);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 215px auto;
+}
+
+.cover-wrap {
+    position: relative;
+}
+
+.cover-wrap.overlap-banner {
+    margin-left: 15%;
+    margin-top: -150px;
+    width: 250px;
+}
+
+.cover-wrap-inner {
+    position: static;
+}
+
+.action {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.action .AddButton {
+    align-items: center;
+    background: #3577ff;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.4rem;
+    height: 35px;
+    justify-content: center;
+    line-height: 1.3rem;
+}
+
+.content {
+    display: inline-grid;
+    grid-template-rows: min-content min-content auto;
+    padding-top: 25px;
+    margin-left: 90px;
+}
+
+.description {
+    color: rgb(64,78,92);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 15px 0;
+    transition: .2s;
+}
