@@ -1,7 +1,7 @@
 <template>
   <div class="feature_card">
     <div class="icon">
-      <img :src = features.img alt="img">
+      <img :src = "require(`../assets/img/icon${features.id}.svg`)" alt="img">
     </div>
     <div>
       <h3 class="title">{{features.title}}</h3>

@@ -1,10 +1,10 @@
 <template>
     <div class="media-card">
-      <a href="">
+      <router-link :to = "{name:'TitlePage', params: {id: titles.id}}">
         <img :src = titles.img alt="img">
-      </a>
+      </router-link>
       <h4 class="titleName">
-        <router-link to="/title">{{titles.title}}</router-link>
+        <router-link :to = "{name:'TitlePage'}">{{titles.name}}</router-link>
       </h4>
     </div>
 </template>

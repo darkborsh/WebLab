@@ -1,6 +1,7 @@
 .page_content {
     display: flex;
     flex: 1 0 auto;
+    margin: unset;
 }
 
 .wrapper {
@@ -15,10 +16,9 @@
 }
 
 .title-info .banner {
-    background-image: url("https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
 }
 
 .info {

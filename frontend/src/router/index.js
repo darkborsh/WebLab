@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import TitlePage from "../views/TitlePage";
+import Home from '../components/Home'
+import TitlePage from '../components/TitlePage'
 
+Vue.component('app-titlepage', TitlePage)
+Vue.component('app-home', Home)
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,7 +14,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/title',
+    path: '/titles/:id',
     name: 'TitlePage',
     component: TitlePage
   }
