@@ -25,8 +25,8 @@
     <div class="search">
       <div class="trends">
         <section class="prev-title landing">
-          <h3 class="left-text">TRENDING NOW</h3>
-          <a href=""><h5 class="right-text">View all</h5></a>
+          <h3 class="left-text">TITLES</h3>
+          <a href=""><h5 class="right-text">View yours</h5></a>
         </section>
         <div style="clear: left"></div>
         <div style="clear: right"></div>

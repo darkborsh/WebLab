@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\TitleController;
+use App\Http\Controllers\UserTitleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +29,12 @@ Route::prefix('titles')->group(function () {
 
 Route::prefix('features')->group(function () {
     Route::get('/', [FeatureController::class, 'list']);
+});
+
+Route::prefix('user')->group(function(){
+    Route::post('/', [UserController::class, 'authorization']);
+});
+
+Route::prefix('user_titles')->group(function(){
+    Route::post('/', [UserTitleController::class, 'info']);
 });

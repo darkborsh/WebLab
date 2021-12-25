@@ -22,6 +22,16 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        Schema::create('user_titles', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('userId');
+            $table->unsignedBigInteger('titleId');
+            $table->timestamps();
+
+            $table->foreign('userId')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('titleId')->references('id')->on('titles')->onDelete('cascade');
+        });
     }
 
     /**
@@ -31,6 +41,10 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        Schema::table('user_titles', function(Blueprint $table){
+            $table->dropForeign(['userId', 'titleId']);
+        });
+        Schema::dropIfExists('user_titles');
         Schema::dropIfExists('users');
     }
 }
