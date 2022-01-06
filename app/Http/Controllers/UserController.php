@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class UserController extends Controller
 {
@@ -26,18 +27,20 @@ class UserController extends Controller
         return $this->arr;
     }
 
-    /**
-     * Информация о пользователе
-     * @param $id
-     * @return array
-     */
     public function info($id)
     {
-        $this->init();
-        return  $this->arr[$id-1];
+        $product = User::query()
+            ->where(['id' => $id])
+            ->first();
+
+        if ($product === null) {
+            throw new NotFoundHttpException('Товар не найден');
+        }
+
+        return $product;
     }
 
-    public function authorization(Request $request)
+    public function authorization(Request $request): array
     {
         //$this->init();
         $arr = [];
