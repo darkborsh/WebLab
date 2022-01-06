@@ -29,15 +29,15 @@ class UserController extends Controller
 
     public function info($id)
     {
-        $product = User::query()
+        $user = User::query()
             ->where(['id' => $id])
             ->first();
 
-        if ($product === null) {
+        if ($user === null) {
             throw new NotFoundHttpException('Товар не найден');
         }
 
-        return $product;
+        return $user;
     }
 
     public function authorization(Request $request): array
