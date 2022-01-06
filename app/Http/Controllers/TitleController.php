@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Title;
 use Illuminate\Routing\Controller;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 Class TitleController extends Controller {
     public $arr = [];
@@ -23,14 +24,16 @@ Class TitleController extends Controller {
         return $this->arr;
     }
 
-    /**
-     * Информация о товаре
-     * @param $id
-     * @return array
-     */
     public function info($id)
     {
-        $this->init();
-        return  $this->arr[$id-1];
+        $product = Title::query()
+            ->where(['id' => $id])
+            ->first();
+
+        if ($product === null) {
+            throw new NotFoundHttpException('Товар не найден');
+        }
+
+        return $product;
     }
 }
